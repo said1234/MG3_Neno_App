@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/linearLayout1">
+       <Button android:text="Audiodatei" android:id="@+id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+       <Button android:text="Videodatei" android:id="@+id/button2" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+
+       <Button
+           android:id="@+id/button3"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Piepen" >
+</Button>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ton 440Hz" >
+        </Button>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SoundPool" >
+        </Button>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:text="Bild" >
+        </Button>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_btn_speak_now" />
+
+        </TableRow>
+    </TableLayout>
+    
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/frameLayout1">    
+       <ImageView android:src="@drawable/icon" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imageView1">
+       </ImageView>
+       <VideoView android:id="@+id/videoView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></VideoView>
+
+       <ProgressBar
+           android:id="@+id/progressBar2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+       <ProgressBar
+           android:id="@+id/progressBar1"
+           style="?android:attr/progressBarStyleLarge"
+           android:layout_width="158dp"
+           android:layout_height="wrap_content" />
+
+       <ToggleButton
+           android:id="@+id/toggleButton1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="ToggleButton" />
+
+    </FrameLayout>
+ </LinearLayout>
